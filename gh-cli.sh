@@ -3,4 +3,9 @@ echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githu
 sudo apt update
 sudo apt install gh
 
-gh auth login --with-token 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
+set -u
+cd ~
+echo "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" > .githubtoken
+unset GITHUB_TOKEN
+gh auth login --with-token < .githubtoken
+rm .githubtoken
