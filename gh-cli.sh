@@ -5,7 +5,7 @@ sudo apt install gh
 
 set -u
 cd ~
-echo "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" > .githubtoken
+echo "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" > .githubtoken
 unset GITHUB_TOKEN
 gh auth login --with-token < .githubtoken
 rm .githubtoken
