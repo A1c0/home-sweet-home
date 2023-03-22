@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 # config: https://github.com/dandavison/delta
 brew install awscli gh volta thefuck git git-delta topgrade
 
